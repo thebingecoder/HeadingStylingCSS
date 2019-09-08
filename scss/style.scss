@@ -1,0 +1,93 @@
+@import 'reset';
+@import 'variables';
+@import 'global';
+
+.wrap{
+
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  background: $light-blue-bg;
+
+  h4{
+    width: 100%;
+    display: block;
+    color: #fff;
+    font-size: 48px;
+    padding: 40px;
+  }
+
+  .side-h{
+    position: relative;
+    margin: 40px;
+    text-align: right;
+
+    &:before{
+      content: ' ';
+      width: 10px;
+      height: 100%;
+      background: #fff;
+      position: absolute;
+      // left: 0;
+      right: 0;
+      top: 0;
+    }
+  }
+
+  .btm-lh{
+    position: relative;
+    margin: 40px;
+    padding-left: 0px;
+
+    &:before{
+      content: ' ';
+      width: 25%;
+      height: 10px;
+      background: #fff;
+      position: absolute;
+      left: 0;
+      top: 0;
+      // bottom: 0;
+    }
+  }
+
+  .btm-ch{
+    position: relative;
+    margin: 40px;
+    text-align: center;
+
+    &:before{
+      content: ' ';
+      width: 25%;
+      height: 10px;
+      background: #fff;
+      position: absolute;
+      left: 50%;
+      top: 0;
+      // bottom: 0;
+      margin-left: -12.5%;
+    }
+  }
+
+  .btm-rh{
+    position: relative;
+    margin: 40px;
+    text-align: right;
+    padding-right: 0px;
+   
+    &:before{
+      content: ' ';
+      width: 25%;
+      height: 10px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      // bottom: 0;
+      background: #fff;
+    }
+  }
+
+}
